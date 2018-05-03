@@ -1,0 +1,10 @@
+.catsimage img, .catinfo img {
+    width: 300px;
+    height: 250px;
+    border-radius: 80px;
+}
+
+ul {
+    list-style: none;
+}
+

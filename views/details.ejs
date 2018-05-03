@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="catinfo">
+            <h1>Details Page for <%= cats[0].name %></h1>
+            <img src='<%= cats[0].image %>' alt="">
+            <h4 class="text-capitalize" >Favorite Food: <%= cats[0].favefood %></h4>
+            <h4>Sleeping Spots:</h4>
+                <ul class="text-capitalize">
+                    <% for (var x in cats[0].spots) { %>
+                        <li><%= cats[0].spots[x] %></li>
+                    <% } %>
+                </ul>
+        </div>
+        <a href="/">go back to cats</a>
+    </div>
+</body>
+</html>
